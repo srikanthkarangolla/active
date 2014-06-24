@@ -1,0 +1,23 @@
+
+
+<%= image_tag @bus.image_url(:thumb) if @bus.image? %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Bus name:</b>
+  <%= @bus.bus_name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @bus.age %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @bus.phone_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_bus_path(@bus) %> |
+<%= link_to 'Back', buses_path %>
